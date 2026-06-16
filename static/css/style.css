@@ -1,0 +1,85 @@
+body {
+    background-color: #05070a;
+    color: #00d4ff;
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.soc-terminal {
+    width: 650px;
+    background-color: #0a0f14;
+    border: 1px solid #004455;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #004455;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1 { font-size: 1.2rem; margin: 0; letter-spacing: 2px; }
+
+.system-id { font-size: 0.7rem; color: #0088aa; }
+
+.scan-area { margin-bottom: 2rem; }
+
+.instruction { font-size: 0.8rem; color: #0088aa; margin-bottom: 10px; }
+
+.input-group { display: flex; gap: 10px; }
+
+input {
+    flex-grow: 1;
+    background: #000;
+    border: 1px solid #004455;
+    color: #00d4ff;
+    padding: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+input:focus { border-color: #00d4ff; box-shadow: 0 0 5px #00d4ff; }
+
+button {
+    background: #004455;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.3s;
+}
+
+button:hover { background: #00d4ff; color: #000; }
+
+.results-box {
+    border: 1px solid #004455;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    min-height: 150px;
+}
+
+.results-box h2 { margin-top: 0; font-size: 1.1rem; text-transform: uppercase; }
+
+.results-box ul { list-style: none; padding: 0; font-size: 0.9rem; }
+
+.results-box li { margin-bottom: 8px; border-left: 2px solid #0088aa; padding-left: 10px; }
+
+/* Dynamic Status States */
+.safe { border-color: #00ff88 !important; color: #00ff88; }
+.suspicious { border-color: #ffaa00 !important; color: #ffaa00; }
+.malicious { border-color: #ff0044 !important; color: #ff0044; }
+
+.hidden { display: none; }
+
+footer { margin-top: 2rem; font-size: 0.6rem; color: #334455; text-align: center; }

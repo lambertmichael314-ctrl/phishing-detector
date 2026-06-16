@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC // URL Auditor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="soc-terminal">
+        <header>
+            <div class="status-light"></div>
+            <h1>URL HEURISTIC ANALYZER</h1>
+            <div class="system-id">STATION_03 // v{{ version }}</div>
+        </header>
+
+        <section class="scan-area">
+            <p class="instruction">INPUT SOURCE URL FOR ARCHIVE ANALYSIS</p>
+            <div class="input-group">
+                <input type="text" id="url-input" placeholder="https://suspicious-site.com/login" autocomplete="off">
+                <button id="scan-btn">INITIATE SCAN</button>
+            </div>
+        </section>
+
+        <div id="results" class="results-box hidden">
+            <!-- Diagnostic data injected here -->
+        </div>
+
+        <footer>
+            <p>WARNING: HEURISTIC ANALYSIS ONLY. ALWAYS USE A SANDBOX FOR LIVE LINKS.</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
